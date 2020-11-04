@@ -171,13 +171,31 @@ function game(user, computer){
     if (computer === 2){
       computer === "scissors";
     }
-    if (user === "rock" && computer === "scissors" || user === "scissors" && computer === "paper" || user === "paper" && computer === "rock"){
+    if (user === "rock" && computer === "scissors"){
       return " you win!";
     }
-    if (user === "rock" && computer === "paper" || user === "paper" && computer === "scissors" || user === "scissors" && computer === "rock"){
+    if (user === "scissors" && computer === "paper"){
+      return "you win!";
+    }
+    if (user === "paper" && computer === "rock"){
+      return "you win!";
+    }
+    if (user === "rock"){
       return "you lose!";
     }
-    if (user === "rock" && computer === "rock" || user === "paper" && computer === "paper" || user === "scissors" && computer === "scissors"){
+    if (user === "paper" && computer === "scissors"){
+      return "you lose!";
+    }
+    if (user === "scissors" && computer === "rock"){
+      return "you lose!";
+    }
+    if (user ==="rock" && computer === "rock"){
+      return "it's a tie!";
+    }
+    if (user === "paper" && computer === "paper"){
+      return "it's a tie!";
+    }
+    if (user === "scissors" && computer === "scissors"){
       return "it's a tie!";
     }
     console.log(game("rock", computer));
@@ -213,11 +231,11 @@ Using the feet function below do the following:
 */
 
 function feet(){
-    let cm = 30.48*cm;
-    return cm*30.48;
-    console.log(feet);
+    
+    return
+    
   }
- feet(1);
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/

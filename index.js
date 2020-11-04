@@ -161,7 +161,6 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 let computer = Math.floor(Math.random() * 3);
-let user = Math.floor(Math.random() * 3);
 function game(user, computer){
     if (computer === 0){
       computer === "rock";
@@ -181,9 +180,9 @@ function game(user, computer){
     if (user === "rock" && computer === "rock" || user === "paper" && computer === "paper" || user === "scissors" && computer === "scissors"){
       return "it's a tie!";
     }
-    console.log(game)
+    console.log(game("rock", computer));
 }
-game(user,computer)
+
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/

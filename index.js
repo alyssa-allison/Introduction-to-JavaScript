@@ -163,16 +163,16 @@ Use the game function below to do the following:
 let computer = Math.floor(Math.random() * 3);
 function game(user, computer){
     if (computer === 0){
-      computer === "rock";
+      computer = "rock";
     } 
     if (computer === 1){
-      computer === "paper";
+      computer = "paper";
     }
     if (computer === 2){
-      computer === "scissors";
+      computer = "scissors";
     }
     if (user === "rock" && computer === "scissors"){
-      return " you win!";
+      return "you win!";
     }
     if (user === "scissors" && computer === "paper"){
       return "you win!";
@@ -180,7 +180,7 @@ function game(user, computer){
     if (user === "paper" && computer === "rock"){
       return "you win!";
     }
-    if (user === "rock"){
+    if (user === "rock" && computer === "paper"){
       return "you lose!";
     }
     if (user === "paper" && computer === "scissors"){
@@ -190,13 +190,13 @@ function game(user, computer){
       return "you lose!";
     }
     if (user ==="rock" && computer === "rock"){
-      return "it's a tie!";
+      return "it's a tie";
     }
     if (user === "paper" && computer === "paper"){
-      return "it's a tie!";
+      return "it's a tie";
     }
     if (user === "scissors" && computer === "scissors"){
-      return "it's a tie!";
+      return "it's a tie";
     } 
 }
 console.log(game("rock", computer));

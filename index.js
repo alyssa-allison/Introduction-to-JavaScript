@@ -197,10 +197,9 @@ function game(user, computer){
     }
     if (user === "scissors" && computer === "scissors"){
       return "it's a tie!";
-    }
-    console.log(game("rock", computer));
+    } 
 }
-
+console.log(game("rock", computer));
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/

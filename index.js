@@ -229,12 +229,12 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(){
-    
-    return
-    
+function feet(cm){
+  
+    return cm / 30.48;
+    console.log(feet);
   }
-
+feet()
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
